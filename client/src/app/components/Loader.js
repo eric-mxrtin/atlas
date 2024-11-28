@@ -8,5 +8,5 @@ export default function Loader() {
     }
     getLoader()
   }, [])
-  return <l-ping size="45" speed="2" color="navy"></l-ping>
+  return <l-ping size="50" speed="2" color="#66a1ff"></l-ping>
 }

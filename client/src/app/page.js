@@ -193,7 +193,7 @@ export default function Home() {
     );
   } else {
     return (
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-screen bg-zinc-900 flex justify-center items-center">
         <Loader />
       </div>
     );
