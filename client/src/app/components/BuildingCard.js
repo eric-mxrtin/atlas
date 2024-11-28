@@ -19,10 +19,10 @@ const BuildingCard = ({
   const { name, hours, distance, status, rating, station, image } = building;
   return (
     <div
-      className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col gap-3 p-4 rounded-lg mr-4`}
+      className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col sm:gap-3 gap-1 sm:p-4 p-2 rounded-lg mr-4`}
       onClick={onClick}
     >
-      <div className="h-[150px] relative">
+      <div className="sm:h-[150px] h-[120px] relative">
         <Image
           src={image}
           alt={name}
@@ -34,9 +34,8 @@ const BuildingCard = ({
       </div>
 
       <div className="flex justify-between">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center">
           <h2 className="font-semibold">{name}</h2>
-          {/* <Badge variant={status == "Open" ? "green" : "red"}>{status}</Badge> */}
         </div>
 
         <div className="inline-flex gap-2 text-sm items-center">
@@ -45,7 +44,7 @@ const BuildingCard = ({
         </div>
       </div>
 
-      <div className="text-sm inline-flex gap-2 items-center">
+      <div className="text-xs sm:text-sm inline-flex gap-2 items-center">
         <Clock size="16px" strokeWidth={2.5} />
         <div className="inline-flex gap-1 items-center">
           {status == "Open" ? (
@@ -60,7 +59,7 @@ const BuildingCard = ({
             : "today"}
         </div>
       </div>
-      <div className="text-sm font-medium inline-flex gap-2 items-center">
+      <div className="text-xs sm:text-sm text-sm font-medium inline-flex gap-2 items-center">
         <TrainFront size="16px" strokeWidth={2.5} />
         {station} Station
       </div>

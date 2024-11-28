@@ -19,6 +19,7 @@ import BuildingCard from "./components/BuildingCard";
 import AnimatedDateTime from "./components/DateTime";
 import { filterBuildings, sortBuildings } from "../../services/operations";
 import Logo from "./components/Logo";
+import LazyBuildingCard from "./components/LazyBuildingCard";
 
 export default function Home() {
   const DEFAULT_COORDINATES = [43.66159152142936, -79.39536144602623];
@@ -91,7 +92,7 @@ export default function Home() {
       fetchData();
       setTimeout(() => {
         setLoading(false);
-      }, "2000")
+      }, "2000");
     }
   }, [coordinates, locationFetched]);
 
@@ -114,7 +115,7 @@ export default function Home() {
       />
 
       {/* Sidebar */}
-      <div className="absolute border-r-[1px] border-neutral-600 bottom-0 left-0 right-0 h-[60%] sm:h-full sm:w-1/3 lg:w-1/4 bg-zinc-800/70 backdrop-blur-sm shadow-lg z-10 flex flex-col">
+      <div className="absolute border-r-[1px] border-neutral-600 bottom-0 left-0 right-0 h-[50%] sm:h-full sm:w-1/3 lg:w-1/4 bg-zinc-800/70 backdrop-blur-sm shadow-lg z-10 flex flex-col">
         {/* Header */}
         <div className="w-full py-2 pl-4 sm:py-4 sm:pt-8 sm:pl-8 gap-4 hidden sm:flex flex-col">
           <Logo />
@@ -189,16 +190,16 @@ export default function Home() {
           </div>
           <div className="p-2 sm:p-4">
             {displayedBuildings.map((building, index) => (
-              <BuildingCard
+              <LazyBuildingCard
                 building={building}
                 coordinates={coordinates}
                 key={index}
                 day={day}
-                id={building.name}
                 onClick={() => {
                   setSelectedCoordinates(null); // Reset state
                   setTimeout(() => setSelectedCoordinates(building.coords), 0); // Set new coordinates
-                }}              />
+                }}
+              />
             ))}
           </div>
         </ScrollArea>
