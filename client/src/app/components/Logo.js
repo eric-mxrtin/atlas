@@ -19,7 +19,7 @@ const Logo = () => {
           <div className="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-green-400"></div>
         </div>{" "}
         <p>
-          atlas <span className="text-sm inline-flex flex-col">uoft</span>
+          atlas
         </p>
       </a>
     </div>
