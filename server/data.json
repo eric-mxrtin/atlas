@@ -1,0 +1,478 @@
+[
+  {
+    "name": "Robarts Library",
+    "coords": [43.66450127005321, -79.39957486669735],
+    "status": "Open",
+    "rating": "4.5",
+    "station": "St George",
+    "image": "/images/robarts.jpg",
+    "hours": {
+      "Monday": ["08:30", "23:00"],
+      "Tuesday": ["08:30", "23:00"],
+      "Wednesday": ["08:30", "23:00"],
+      "Thursday": ["08:30", "23:00"],
+      "Friday": ["08:30", "23:00"],
+      "Saturday": ["09:00", "22:00"],
+      "Sunday": ["10:00", "22:00"]
+    }
+  },
+  {
+    "name": "E.J. Pratt",
+    "coords": [43.66656632104989, -79.39137183339376],
+    "status": "Open",
+    "rating": "4.8",
+    "station": "Museum",
+    "image": "/images/ej-pratt.jpg",
+    "hours": {
+      "Monday": ["09:00", "23:45"],
+      "Tuesday": ["09:00", "23:45"],
+      "Wednesday": ["09:00", "23:45"],
+      "Thursday": ["09:00", "23:45"],
+      "Friday": ["09:00", "18:45"],
+      "Saturday": ["10:00", "23:45"],
+      "Sunday": ["10:00", "23:45"]
+    }
+  },
+  {
+    "name": "Gerstein Centre",
+    "coords": [43.66232748459465, -79.39370044503877],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "Queen's Park",
+    "image": "/images/gerstein.jpg",
+    "hours": {
+      "Monday": ["08:30", "23:00"],
+      "Tuesday": ["08:30", "23:00"],
+      "Wednesday": ["08:30", "23:00"],
+      "Thursday": ["08:30", "23:00"],
+      "Friday": ["08:30", "22:00"],
+      "Saturday": ["09:00", "22:00"],
+      "Sunday": ["10:00", "22:00"]
+    }
+  },
+  {
+    "name": "Knox College",
+    "coords": [43.66142645867825, -79.3965188597008],
+    "status": "Open",
+    "rating": "5.0",
+    "station": "Queen's Park",
+    "image": "/images/knox.jpg",
+    "hours": {
+      "Monday": ["08:30", "16:30"],
+      "Tuesday": ["08:30", "16:30"],
+      "Wednesday": ["08:30", "16:30"],
+      "Thursday": ["08:30", "16:30"],
+      "Friday": ["08:30", "16:30"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "UC Library",
+    "coords": [43.662885261767045, -79.39462455689487],
+    "status": "Open",
+    "rating": "4.5",
+    "station": "Queen's Park",
+    "image": "/images/uc.jpg",
+    "hours": {
+      "Monday": ["09:00", "20:00"],
+      "Tuesday": ["09:00", "20:00"],
+      "Wednesday": ["09:00", "20:00"],
+      "Thursday": ["09:00", "20:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": ["13:00", "17:00"],
+      "Sunday": ["13:00", "17:00"]
+    }
+  },
+  {
+    "name": "Myhal Building",
+    "coords": [43.66079893378343, -79.39636946008957],
+    "status": "Open",
+    "rating": "4.1",
+    "station": "Queen's Park",
+    "image": "/images/myhal.jpg",
+    "hours": {
+      "Monday": ["07:00", "23:00"],
+      "Tuesday": ["07:00", "23:00"],
+      "Wednesday": ["07:00", "23:00"],
+      "Thursday": ["07:00", "23:00"],
+      "Friday": ["07:00", "23:00"],
+      "Saturday": ["08:30", "20:00"],
+      "Sunday": ["08:30", "20:00"]
+    }
+  },
+  {
+    "name": "Bahen Centre",
+    "coords": [43.659853612472304, -79.3973041611138],
+    "status": "Open",
+    "rating": "4.3",
+    "station": "Queen's Park",
+    "image": "/images/bahen.jpg",
+    "hours": {
+      "Monday": ["08:30", "21:00"],
+      "Tuesday": ["08:30", "21:00"],
+      "Wednesday": ["08:30", "21:00"],
+      "Thursday": ["08:30", "21:00"],
+      "Friday": ["08:30", "18:00"],
+      "Saturday": [],
+      "Sunday": ["08:30", "21:00"]
+    }
+  },
+  {
+    "name": "Sidney Smith",
+    "coords": [43.66253044291955, -79.39852101877675],
+    "status": "Open",
+    "rating": "3.6",
+    "station": "St George",
+    "image": "/images/sidney-smith.jpg",
+    "hours": {
+      "Monday": ["10:00", "18:30"],
+      "Tuesday": ["10:00", "18:30"],
+      "Wednesday": ["10:00", "18:30"],
+      "Thursday": ["10:00", "18:30"],
+      "Friday": ["10:00", "17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Med Sci Building",
+    "coords": [43.66081004841944, -79.3934804096789],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "Queen's Park",
+    "image": "/images/med-sci.jpg",
+    "hours": {
+      "Monday": ["08:45", "17:00"],
+      "Tuesday": ["08:45", "17:00"],
+      "Wednesday": ["08:45", "17:00"],
+      "Thursday": ["08:45", "17:00"],
+      "Friday": ["08:45", "17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "OISE",
+    "coords": [43.66802214973769, -79.39821620116368],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "St George",
+    "image": "/images/oise.jpg",
+    "hours": {
+      "Monday": ["09:00", "16:00"],
+      "Tuesday": ["09:00", "16:00"],
+      "Wednesday": ["09:00", "16:00"],
+      "Thursday": ["09:00", "16:00"],
+      "Friday": ["09:00", "16:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Rotman Building",
+    "coords": [43.66527844619908, -79.39860712787925],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "St George",
+    "image": "/images/rotman.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "21:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Emmanuel College Library",
+    "coords": [43.66675513661663, -79.39282327743376],
+    "status": "Open",
+    "rating": "4.3",
+    "station": "Museum",
+    "image": "/images/emmanuel.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": ["13:00", "17:00"],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Ivey Library",
+    "coords": [43.661751138130455, -79.40020996675602],
+    "status": "Open",
+    "rating": "4.3",
+    "station": "Spadina",
+    "image": "/images/ivey.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": ["11:00", "19:00"],
+      "Sunday": ["11:00", "19:00"]
+    }
+  },
+  {
+    "name": "Eberhard Zeidler",
+    "coords": [43.65939742449778, -79.4006508858026],
+    "status": "Open",
+    "rating": "5.0",
+    "station": "Queen's Park",
+    "image": "/images/eberhard.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "19:00"],
+      "Saturday": ["12:00", "17:00"],
+      "Sunday": ["12:00", "17:00"]
+    }
+  },
+  {
+    "name": "Earth Sciences Library",
+    "coords": [43.66048155772793, -79.39971651015628],
+    "status": "Open",
+    "rating": "4.9",
+    "station": "Queen's Park",
+    "image": "/images/earth.jpeg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "18:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Engineering & Computer Science Library",
+    "coords": [43.66021533112599, -79.39493459063804],
+    "status": "Open",
+    "rating": "4.0",
+    "station": "Queen's Park",
+    "image": "/images/eng-cs.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": ["10:00", "17:00"],
+      "Sunday": ["13:00", "18:00"]
+    }
+  },
+  {
+    "name": "John M. Kelly Library",
+    "coords": [43.66499527507479, -79.38956363946868],
+    "status": "Open",
+    "rating": "4.0",
+    "station": "Museum",
+    "image": "/images/john.jpg",
+    "hours": {
+      "Monday": ["08:30", "23:30"],
+      "Tuesday": ["08:30", "23:30"],
+      "Wednesday": ["08:30", "23:30"],
+      "Thursday": ["08:30", "23:30"],
+      "Friday": ["08:30", "23:30"],
+      "Saturday": ["10:00", "23:30"],
+      "Sunday": ["13:00", "23:30"]
+    }
+  },
+  {
+    "name": "Mathematical Sciences Library",
+    "coords": [43.65961950003327, -79.39710291497403],
+    "status": "Open",
+    "rating": "3.2",
+    "station": "Queen's Park",
+    "image": "/images/math.png",
+    "hours": {
+      "Monday": ["09:00", "17:00"],
+      "Tuesday": ["09:00", "17:00"],
+      "Wednesday": ["09:00", "17:00"],
+      "Thursday": ["09:00", "17:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "A.D. Allen Chemistry Library",
+    "coords": [43.66160796650062, -79.39782162739687],
+    "status": "Open",
+    "rating": "4.8",
+    "station": "St. George",
+    "image": "/images/ad-allen.jpg",
+    "hours": {
+      "Monday": ["10:00", "19:00"],
+      "Tuesday": ["10:00", "19:00"],
+      "Wednesday": ["10:00", "19:00"],
+      "Thursday": ["10:00", "19:00"],
+      "Friday": ["10:00", "17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Dentistry Library",
+    "coords": [43.65631747599907, -79.38706135819297],
+    "status": "Open",
+    "rating": "3.8",
+    "station": "St. Patrick",
+    "image": "/images/dentistry.jpg",
+    "hours": {
+      "Monday": ["09:00", "17:00"],
+      "Tuesday": ["09:00", "17:00"],
+      "Wednesday": ["09:00", "17:00"],
+      "Thursday": ["09:00", "17:00"],
+      "Friday": ["09:00", "17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Hart House",
+    "coords": [43.66403281738504, -79.3943237980214],
+    "status": "Open",
+    "rating": "4.6",
+    "station": "Museum",
+    "image": "/images/hart-house.jpeg",
+    "hours": {
+      "Monday": ["07:00", "23:00"],
+      "Tuesday": ["07:00", "23:00"],
+      "Wednesday": ["07:00", "23:00"],
+      "Thursday": ["07:00", "23:00"],
+      "Friday": ["07:00", "23:00"],
+      "Saturday": ["07:00", "23:00"],
+      "Sunday": ["07:00", "23:00"]
+    }
+  },
+  {
+    "name": "UTSU Student Commons",
+    "coords": [43.65858161745492, -79.39789381627162],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "Queen's Park",
+    "image": "/images/utsu.jpg",
+    "hours": {
+      "Monday": ["09:00", "21:00"],
+      "Tuesday": ["09:00", "21:00"],
+      "Wednesday": ["09:00", "21:00"],
+      "Thursday": ["09:00", "21:00"],
+      "Friday": ["09:00", "21:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Bora Laskin Library",
+    "coords": [43.66612688754359, -79.39379964179318],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "Museum",
+    "image": "/images/bora.jpg",
+    "hours": {
+      "Monday": ["08:45", "23:00"],
+      "Tuesday": ["08:45", "23:00"],
+      "Wednesday": ["08:45", "23:00"],
+      "Thursday": ["08:45", "23:00"],
+      "Friday": ["08:45", "20:00"],
+      "Saturday": ["10:00", "20:00"],
+      "Sunday": ["10:00", "20:00"]
+    }
+  },
+  {
+    "name": "Gail Brooker Library",
+    "coords": [43.6681008909765, -79.39314803659578],
+    "status": "Open",
+    "rating": "4.4",
+    "station": "Queen's Park",
+    "image": "/images/gail.jpg",
+    "hours": {
+      "Monday": ["13:00", "16:00"],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Innis College Library",
+    "coords": [43.66557526477198, -79.39937800741133],
+    "status": "Open",
+    "rating": "4.7",
+    "station": "St. George",
+    "image": "/images/innis.jpg",
+    "hours": {
+      "Monday": ["10:00","17:00"],
+      "Tuesday": ["10:00","17:00"],
+      "Wednesday": ["10:00","17:00"],
+      "Thursday": ["10:00","17:00"],
+      "Friday": ["10:00","17:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "John W. Graham Library",
+    "coords": [43.665113908757995, -79.39637140449797],
+    "status": "Open",
+    "rating": "4.8",
+    "station": "Museum",
+    "image": "/images/graham.jpg",
+    "hours": {
+      "Monday": ["8:30", "23:45"],
+      "Tuesday": ["8:30", "23:45"],
+      "Wednesday": ["8:30", "23:45"],
+      "Thursday": ["8:30", "23:45"],
+      "Friday": ["8:30", "19:45"],
+      "Saturday": ["9:15", "19:45"],
+      "Sunday": ["13:15", "23:45"]
+    }
+  },
+  {
+    "name": "Music Library",
+    "coords": [43.666343870847705, -79.39449265726378],
+    "status": "Open",
+    "rating": "5.0",
+    "station": "Museum",
+    "image": "/images/music.jpg",
+    "hours": {
+      "Monday": ["8:30", "19:00"],
+      "Tuesday": ["8:30", "19:00"],
+      "Wednesday": ["8:30", "19:00"],
+      "Thursday": ["8:30", "19:00"],
+      "Friday": ["8:30", "18:00"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "name": "Regis College Library",
+    "coords": [43.66397859571149, -79.39004316978425],
+    "status": "Open",
+    "rating": "3.8",
+    "station": "Wellesley",
+    "image": "/images/regis.jpg",
+    "hours": {
+      "Monday": ["8:30", "16:30"],
+      "Tuesday": ["8:30", "16:30"],
+      "Wednesday": ["8:30", "16:30"],
+      "Thursday": ["8:30", "16:30"],
+      "Friday": ["8:30", "16:30"],
+      "Saturday": [],
+      "Sunday": []
+    }
+  }
+]
