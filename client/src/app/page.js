@@ -89,9 +89,7 @@ export default function Home() {
 
     if (locationFetched) {
       fetchData();
-      setTimeout(() => {
-        setLoading(false);
-      }, 500);
+      setLoading(false);
     }
   }, [coordinates, locationFetched]);
 
@@ -195,8 +193,10 @@ export default function Home() {
                 key={index}
                 day={day}
                 id={building.name}
-                onClick={() => setSelectedCoordinates(building.coords)} // Pass building.coords
-              />
+                onClick={() => {
+                  setSelectedCoordinates(null); // Reset state
+                  setTimeout(() => setSelectedCoordinates(building.coords), 0); // Set new coordinates
+                }}              />
             ))}
           </div>
         </ScrollArea>
