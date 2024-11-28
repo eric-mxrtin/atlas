@@ -183,7 +183,6 @@ export default function Home() {
                   key={index}
                   day={day}
                   id={building.name}
-                  isHighlighted={highlightedBuilding == building.name}
                   onClick={() => setSelectedCoordinates(building.coords)} // Pass building.coords
                 />
               ))}

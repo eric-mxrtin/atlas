@@ -13,16 +13,13 @@ import "../globals.css";
 const BuildingCard = ({
   building,
   day,
-  isHighlighted,
   coordinates,
   onClick,
 }) => {
   const { name, hours, distance, status, rating, station, image } = building;
   return (
     <div
-      className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col gap-3 p-4 rounded-lg mr-4 ${
-        isHighlighted ? "bg-neutral-200" : ""
-      }`}
+      className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col gap-3 p-4 rounded-lg mr-4`}
       onClick={onClick}
     >
       <div className="h-[150px] relative">
