@@ -1,0 +1,9 @@
+/* Neon Green Text Effect */
+.neon-text-open {
+  text-shadow: 0 0 5px #4ade80, 0 0 10px #4ade80, 0 0 20px #4ade80, 0 0 40px #4ade80;
+}
+
+/* Neon Red Text Effect */
+.neon-text-closed {
+  text-shadow: 0 0 5px #fb7185, 0 0 10px #fb7185, 0 0 20px #fb7185, 0 0 40px #fb7185;
+}
