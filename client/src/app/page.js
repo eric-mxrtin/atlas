@@ -89,7 +89,9 @@ export default function Home() {
 
     if (locationFetched) {
       fetchData();
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, "2000")
     }
   }, [coordinates, locationFetched]);
 
