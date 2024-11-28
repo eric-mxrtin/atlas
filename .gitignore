@@ -1,6 +1,7 @@
 server/.vercel
 server/.env
 
+client/public/images
 
 # dependencies
 client/node_modules
