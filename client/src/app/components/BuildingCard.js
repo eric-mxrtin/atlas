@@ -11,13 +11,9 @@ import Image from "next/image";
 import "../globals.css";
 import { convertToIdFormat } from "../../../services/formatId";
 
-const BuildingCard = ({
-  building,
-  day,
-  coordinates,
-  onClick,
-}) => {
-  const { name, hours, distance, status, rating, station, image, id } = building;
+const BuildingCard = ({ building, day, coordinates, onClick }) => {
+  const { name, hours, distance, status, rating, station, image, id } =
+    building;
   return (
     <div
       className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col sm:gap-3 gap-1 sm:p-4 p-2 rounded-lg mr-4`}
@@ -52,11 +48,11 @@ const BuildingCard = ({
           {status == "Open" ? (
             <p className="text-emerald-400 font-black">Open</p>
           ) : (
-            <p className="text-rose-400 !font-bold">Closed</p>
+            <p className="text-rose-400 font-black">Closed</p>
           )}
-          {hours[day].length > 0
+          {status === "Open"
             ? `until ${formatTime(hours[day][1])}`
-            : status === "Open"
+            : hours[day].length > 0
             ? ""
             : "today"}
         </div>
@@ -74,7 +70,11 @@ const BuildingCard = ({
 
         <Popover>
           <PopoverTrigger asChild>
-            <Button className="inline-flex gap-1" variant="ghost" onClick={(e) => e.stopPropagation()}>
+            <Button
+              className="inline-flex gap-1"
+              variant="ghost"
+              onClick={(e) => e.stopPropagation()}
+            >
               View Hours <ChevronDown size="16px" />
             </Button>
           </PopoverTrigger>
