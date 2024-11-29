@@ -20,6 +20,7 @@ import AnimatedDateTime from "./components/DateTime";
 import { filterBuildings, sortBuildings } from "../../services/operations";
 import Logo from "./components/Logo";
 import LazyBuildingCard from "./components/LazyBuildingCard";
+import { convertToIdFormat } from "../../services/formatId";
 
 export default function Home() {
   const DEFAULT_COORDINATES = [43.66159152142936, -79.39536144602623];
@@ -194,6 +195,7 @@ export default function Home() {
                 building={building}
                 coordinates={coordinates}
                 key={index}
+                id={convertToIdFormat(building.name)}
                 day={day}
                 onClick={() => {
                   setSelectedCoordinates(null); // Reset state

@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "atlas",
+  title: "atlas - eric martin",
   description: "view availability of uoft campus locations. made by eric martin.",
 };
 

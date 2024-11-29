@@ -9,6 +9,7 @@ import { ChevronDown, Clock, Star, TrainFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import "../globals.css";
+import { convertToIdFormat } from "../../../services/formatId";
 
 const BuildingCard = ({
   building,
@@ -16,11 +17,12 @@ const BuildingCard = ({
   coordinates,
   onClick,
 }) => {
-  const { name, hours, distance, status, rating, station, image } = building;
+  const { name, hours, distance, status, rating, station, image, id } = building;
   return (
     <div
       className={`flex border-[1px] border-neutral-600 hover:border-neutral-200 mb-4 cursor-pointer hover:bg-gray-100/10 duration-100 flex-col sm:gap-3 gap-1 sm:p-4 p-2 rounded-lg mr-4`}
       onClick={onClick}
+      id={convertToIdFormat(name)}
     >
       <div className="sm:h-[150px] h-[120px] relative">
         <Image
