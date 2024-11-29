@@ -5,6 +5,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
 import { Button } from "@/components/ui/button";
 import { LocateIcon, RotateCw } from "lucide-react";
+import { convertToIdFormat } from "../../../services/formatId";
 
 const Map = ({ data, coordinates, selectedCoordinates }) => {
   const DEFAULT_CENTER = [-79.397667, 43.662952];
@@ -22,9 +23,9 @@ const Map = ({ data, coordinates, selectedCoordinates }) => {
   function getColorByStatus(status) {
     switch (status) {
       case "Open":
-        return "h-2 w-2 rounded-full bg-green-400 shadow-[0px_0px_4px_2px_rgba(34,197,94,0.7)]";
+        return "h-2 w-2 rounded-full cursor-pointer bg-green-400 shadow-[0px_0px_4px_2px_rgba(34,197,94,0.7)]";
       case "Closed":
-        return "h-2 w-2 rounded-full bg-red-400 shadow-[0px_0px_4px_2px_rgba(239,68,68,0.9)]";
+        return "h-2 w-2 rounded-full cursor-pointer bg-red-400 shadow-[0px_0px_4px_2px_rgba(239,68,68,0.9)]";
       default:
         return "w-2 h-2 rounded-full bg-gray-400";
     }
@@ -62,6 +63,33 @@ const Map = ({ data, coordinates, selectedCoordinates }) => {
         const el = document.createElement("div");
         el.className = getColorByStatus(building.status);
 
+        el.addEventListener("click", () => {
+          const flyToOptions = {
+            center: [building.coords[1], building.coords[0]],
+            zoom: DEFAULT_ZOOM + 2.5,
+            pitch: DEFAULT_PITCH,
+            bearing: DEFAULT_BEARING,
+          };
+        
+          mapRef.current?.flyTo({
+            ...flyToOptions,
+            essential: true, // This ensures the animation completes
+            duration: 2000, // Adjust this value as needed (in milliseconds)
+          });
+        
+          const buildingCardItem = document.getElementById(convertToIdFormat(building.name));
+        
+          // Wait for the flyTo animation to complete before scrolling
+          mapRef.current?.once('moveend', () => {
+            if (buildingCardItem) {
+              buildingCardItem.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+
         if (mapRef.current && building.coords) {
           console.log(building.coords);
           new mapboxgl.Marker(el)
@@ -74,7 +102,7 @@ const Map = ({ data, coordinates, selectedCoordinates }) => {
     if (coordinates) {
       const userPos = document.createElement("div");
       userPos.className =
-        "h-3 w-3 border-[1.5px] border-zinc-50 rounded-full bg-blue-400 shadow-[0px_0px_4px_2px_rgba(14,165,233,1)]";
+        "h-3.5 w-3.5 border-[1.5px] border-zinc-50 rounded-full bg-blue-400 shadow-[0px_0px_4px_2px_rgba(14,165,233,1)]";
 
       new mapboxgl.Marker(userPos)
         .setLngLat([coordinates[1], coordinates[0]])

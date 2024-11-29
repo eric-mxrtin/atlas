@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import BuildingCard from "./BuildingCard";
 
-const LazyBuildingCard = ({ building, day, onClick, coordinates }) => {
+const LazyBuildingCard = ({ building, day, onClick, coordinates, id }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef();
 
@@ -31,6 +31,7 @@ const LazyBuildingCard = ({ building, day, onClick, coordinates }) => {
           day={day}
           coordinates={coordinates}
           onClick={onClick}
+          id={id}
         />
       )}
     </div>
