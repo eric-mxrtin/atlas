@@ -25,7 +25,7 @@ const BuildingCard = ({ building, day, coordinates, onClick }) => {
           src={image}
           alt={name}
           fill={true}
-          quality={50}
+          quality={5}
           style={{ objectFit: "cover" }} // Crops the image to fit the specified dimensions
           className="rounded-lg"
         />
