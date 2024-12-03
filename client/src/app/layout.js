@@ -3,6 +3,7 @@ import "./globals.css";
 import { DM_Sans } from "next/font/google";
 import { Urbanist } from "next/font/google";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ping.js"
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
