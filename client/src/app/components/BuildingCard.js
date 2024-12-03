@@ -45,16 +45,18 @@ const BuildingCard = ({ building, day, coordinates, onClick }) => {
       <div className="text-xs sm:text-sm inline-flex gap-2 items-center">
         <Clock size="16px" strokeWidth={2.5} />
         <div className="inline-flex gap-1 items-center">
-          {status == "Open" ? (
+          {status === "Open" ? (
             <p className="text-emerald-400 font-black">Open</p>
           ) : (
             <p className="text-rose-400 font-black">Closed</p>
           )}
           {status === "Open"
-            ? `until ${formatTime(hours[day][1])}`
+            ? hours[day][0] === "00:00" && hours[day][1] === "24:00"
+              ? " for 24 hours"
+              : ` until ${formatTime(hours[day][1])}`
             : hours[day].length > 0
             ? ""
-            : "today"}
+            : " today"}
         </div>
       </div>
       <div className="text-xs sm:text-sm text-sm font-medium inline-flex gap-2 items-center">
