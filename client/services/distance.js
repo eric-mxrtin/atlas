@@ -3,22 +3,6 @@ import axios from "axios";
 const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 const API_KEY =  process.env.NEXT_PUBLIC_API_KEY;
 
-// Haversine formula to calculate the great-circle distance, dont need this tbh
-export const haversineDistance = (lat1, lon1, lat2, lon2) => {
-  const toRadians = (degrees) => degrees * (Math.PI / 180);
-  const R = 6371; // Radius of Earth in kilometers
-  const dLat = toRadians(lat2 - lat1);
-  const dLon = toRadians(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(toRadians(lat1)) *
-      Math.cos(toRadians(lat2)) *
-      Math.sin(dLon / 2) *
-      Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c; // Distance in kilometers
-};
-
 function vincentyDistance([lat1, lon1], [lat2, lon2]) {
   const toRadians = (deg) => (deg * Math.PI) / 180;
   const a = 6378137.0; // Semi-major axis of the Earth (meters)
