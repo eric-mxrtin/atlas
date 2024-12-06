@@ -28,7 +28,7 @@ export default function Home() {
   const [sortedBuildings, setSortedBuildings] = useState([]);
   const [day, setDay] = useState("");
   const [loading, setLoading] = useState(true);
-  const [locationFetched, setLocationFetched] = useState(false); // New state to track location fetch
+  const [locationFetched, setLocationFetched] = useState(false);
   const [sortOption, setSortOption] = useState("Closest");
   const [filterOption, setFilterOption] = useState("All");
   const [displayedBuildings, setDisplayedBuildings] = useState([]);

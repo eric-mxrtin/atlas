@@ -1,5 +1,8 @@
 server/.vercel
 server/.env
+server/node_modules
+server/data.json
+server/api/buildings.js
 
 client/public/images
 
