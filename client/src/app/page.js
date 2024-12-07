@@ -49,27 +49,27 @@ export default function Home() {
           (position) => {
             const { latitude, longitude } = position.coords;
             setCoordinates([latitude, longitude]);
-            setLocationFetched(true); // Set locationFetched to true when location is fetched
+            setLocationFetched(true); // set locationFetched to true when location is fetched
           },
           () => {
-            // User denied location sharing, fallback to default coordinates
+            // user denied location sharing, fallback to default coordinates
             setCoordinates(null);
             setSortOption("Name");
-            setLocationFetched(true); // Set locationFetched to true if location is denied
+            setLocationFetched(true); // set locationFetched to true if location is denied
           }
         );
       } else {
-        // Geolocation not supported, fallback to default coordinates
+        // geolocation not supported, fallback to default coordinates
         setCoordinates(null);
         setSortOption("Name");
-        setLocationFetched(true); // Set locationFetched to true if geolocation is not supported
+        setLocationFetched(true); // set locationFetched to true if geolocation is not supported
       }
     };
 
     getLocation();
   }, []);
 
-  // Fetch data based on the coordinates
+  // fetch data based on the coordinates
   useEffect(() => {
     const fetchData = async () => {
       const userCoords = coordinates || DEFAULT_COORDINATES;
@@ -78,7 +78,7 @@ export default function Home() {
         userCoords[1]
       );
 
-      // Update library statuses
+      // update library statuses
       const current = new Date();
       setDay(current.toLocaleString("en-US", { weekday: "long" }));
       const updatedBuildings = sortedBuildings.map((building) => {
@@ -112,7 +112,7 @@ export default function Home() {
         data={sortedBuildings}
         className="absolute inset-0 w-full h-full"
         coordinates={coordinates}
-        selectedCoordinates={selectedCoordinates} // Pass down
+        selectedCoordinates={selectedCoordinates}
       />
 
       {/* Sidebar */}
@@ -198,8 +198,8 @@ export default function Home() {
                 id={convertToIdFormat(building.name)}
                 day={day}
                 onClick={() => {
-                  setSelectedCoordinates(null); // Reset state
-                  setTimeout(() => setSelectedCoordinates(building.coords), 0); // Set new coordinates
+                  setSelectedCoordinates(null); // reset state
+                  setTimeout(() => setSelectedCoordinates(building.coords), 0); // set new coordinates
                 }}
               />
             ))}
