@@ -1,5 +1,7 @@
 # Atlas
 
+![image](https://github.com/user-attachments/assets/be854c86-a21f-4661-acfc-9e29e72a920c)
+
 With 40+ libraries and countless study spaces scattered across UofT, finding the perfect spot can feel like a scavenger hunt. So, I created atlas. It includes:
 
 <ul>
