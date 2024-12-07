@@ -5,9 +5,9 @@ const API_KEY =  process.env.NEXT_PUBLIC_API_KEY;
 
 function vincentyDistance([lat1, lon1], [lat2, lon2]) {
   const toRadians = (deg) => (deg * Math.PI) / 180;
-  const a = 6378137.0; // Semi-major axis of the Earth (meters)
-  const f = 1 / 298.257223563; // Flattening of the Earth
-  const b = a * (1 - f); // Semi-minor axis
+  const a = 6378137.0; // semi-major axis of the Earth (meters)
+  const f = 1 / 298.257223563; // flattening of the Earth
+  const b = a * (1 - f); // semi-minor axis
 
   const φ1 = toRadians(lat1);
   const φ2 = toRadians(lat2);
@@ -32,7 +32,7 @@ function vincentyDistance([lat1, lon1], [lat2, lon2]) {
     sinσ = Math.sqrt(
       (cosU2 * sinλ) ** 2 + (cosU1 * sinU2 - sinU1 * cosU2 * cosλ) ** 2
     );
-    if (sinσ === 0) return 0; // Co-incident points
+    if (sinσ === 0) return 0; // co-incident points
 
     cosσ = sinU1 * sinU2 + cosU1 * cosU2 * cosλ;
     σ = Math.atan2(sinσ, cosσ);
@@ -73,7 +73,7 @@ function vincentyDistance([lat1, lon1], [lat2, lon2]) {
   return distance / 1000; // Distance in meters
 }
 
-// Fetch and sort buildings by distance
+// fetch and sort buildings by distance
 export const fetchAndSortBuildings = async (lat, long) => {
   try {
     const response = await axios.get(baseUrl, {
@@ -81,12 +81,11 @@ export const fetchAndSortBuildings = async (lat, long) => {
         Authorization: API_KEY
       }
     });
-    const buildings = JSON.parse(atob(response.data.data));  // Decode the base64 data
+    const buildings = JSON.parse(atob(response.data.data));  // decode the base64 data
 
     const sortedBuildings = buildings
       .map((building) => {
         const [buildingLat, buildingLon] = building.coords;
-        // const distance = haversineDistance(lat, long, buildingLat, buildingLon);
         const distance = vincentyDistance(
           [lat, long],
           [buildingLat, buildingLon]

@@ -1,7 +1,5 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
-import { Urbanist } from "next/font/google";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 
@@ -13,7 +11,7 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   title: "atlas - eric martin",
-  description: "view availability of uoft campus locations. made by eric martin.",
+  description: "view building and library availability on the university of toronto campus. made by eric martin, using MapboxGL and Google Maps API.",
 };
 
 export default function RootLayout({ children }) {
