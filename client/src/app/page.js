@@ -100,7 +100,10 @@ export default function Home() {
   if (loading || !locationFetched) {
     return (
       <div className="min-h-screen bg-zinc-900 flex justify-center items-center">
-        <Loader />
+        <div className="flex flex-col gap-4 items-center justify-center">
+          <Loader />
+          <p className="font-medium text-lg text-white">welcome, to atlas.</p>
+        </div>
       </div>
     );
   }
