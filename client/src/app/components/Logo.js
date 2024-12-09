@@ -11,7 +11,7 @@ const Logo = () => {
   return (
     <div className="inline-flex flex-wrap">
       <a
-        href="https://www.linkedin.com/in/eric-mxrtin"
+        href="http://ericm.ca/"
         target="_blank"
         className={`${urbanist.variable} inline-flex font-urbanist font-medium gap-3 text-4xl md:px-4 px-2 items-center py-2 bg-zinc-900 rounded-md hover:bg-zinc-200 hover:text-zinc-700 duration-150`}
       >
