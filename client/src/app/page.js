@@ -2,7 +2,13 @@
 import { useState, useEffect } from "react";
 import { fetchAndSortBuildings } from "../../services/distance";
 import { isLibraryOpen } from "../../services/checkStatus";
-import { ArrowDown, ListFilter } from "lucide-react";
+import {
+  ArrowDown,
+  ExternalLink,
+  Github,
+  Linkedin,
+  ListFilter,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -123,6 +129,18 @@ export default function Home() {
         {/* Header */}
         <div className="w-full py-2 pl-4 sm:py-4 sm:pt-8 sm:pl-8 gap-4 hidden sm:flex flex-col">
           <Logo />
+          <div className="flex gap-2 items-center">
+            <a href="https://github.com/eric-mxrtin/atlas" target="_blank">
+              <Button className="hover:bg-neutral-50 hover:text-neutral-800">
+                <Github size="16px" /> GitHub
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/eric-mxrtin" target="_blank">
+              <Button className="hover:bg-neutral-50 hover:text-neutral-800">
+                <ExternalLink size="16px" /> LinkedIn
+              </Button>
+            </a>
+          </div>
 
           <AnimatedDateTime />
           <div className="flex flex-wrap gap-2">
